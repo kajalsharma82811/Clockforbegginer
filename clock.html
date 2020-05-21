@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Clock</title>
+</head>
+<style>
+	body{
+		background-color:#f16059;
+	}
+	.container .heading{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		margin-top:80px;
+		font-size:70px;
+		text-transform: uppercase;
+		text-shadow: 2px 2px black;
+	}.heading2{
+		font-size:30px;
+		margin-left:40vw;
+		text-shadow: 2px 1px black;
+		font-style:bold;
+
+	}.clock{
+		margin-left:42vw;
+		font-size:40px;
+		font-weight:900;
+
+	}.container2{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		
+		
+		
+	}.wakeup_container3{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+
+	
+		
+
+	}.Lunch_container{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		
+		
+	}.Nap_container{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		
+
+	}#partyTimeButton{
+		background-color:#222;
+		width:300px;
+		height:50px;
+		color:white;
+		font-weight:900;
+		font-size:30px;
+		margin-left:40vw;
+
+
+	}footer{
+		margin-left:45vw;
+	}.container2{
+		position:relative;
+
+	}#timeEvent{
+		position:absolute;
+		bottom:30px;
+		left:500px;
+		color:#fff;
+		font-weight:900;
+		font-size:20px;
+	}
+</style>
+<body>
+	<div class="container">
+		<h1 class="heading">Lolcat clock</h1>
+		<h4 class="heading2">I CAN HAZ TIME??</h4>
+		<span class="clock"></span>
+	</div>
+	<div class="container2">
+		<img src="js/cat3.jpg" alt="catpic" class="image" width="450px" height="350px">
+		 <blockquote id="timeEvent">This is where time events are reported</blockquote>
+
+		
+	</div>
+	<div class="main_container">
+	<div class="wakeup_container3">
+		<h4 class="h4">SET WAKE UP TIME</h4>
+		<select id="wakeup">
+	  <option value="1">1 AM - 2AM</option>
+      <option value="2">2 AM - 3AM</option>
+      <option value="3">3 AM - 4AM</option>
+      <option value="4">4 AM - 5AM</option>
+      <option value="5">5 AM - 6AM</option>
+      <option value="6">6 AM - 7AM</option>
+      <option value="7">7 AM - 8AM</option>
+      <option value="8">8 AM - 9AM</option>
+      <option value="9">9 AM - 10AM</option>
+      <option value="10">10 AM - 11AM</option>
+      <option value="11">11 AM - 12PM</option>
+      <option value="12">12 PM - 1PM</option>
+      <option value="13">1 PM - 2PM</option>
+      <option value="14">2 PM - 3PM</option>
+      <option value="15">3 PM - 4PM</option>
+      <option value="16">4 PM - 5PM</option>
+      <option value="17">5 PM - 6PM</option>
+      <option value="18">6 PM - 7PM</option>
+      <option value="19">7 PM - 8PM</option>
+      <option value="20">8 PM - 9PM</option>
+      <option value="21">9 PM - 10PM</option>
+      <option value="22">10 PM - 11PM</option>
+      <option value="23">11 PM - 12AM</option>
+      <option value="24">12 AM - 1AM</option>
+		</select>
+	</div>
+		<div class="Lunch_container">
+		  <h4 class="h41">SET LUNCH TIME</h4>
+		   <select id="lunchTimeSelector">
+        <option value="1">1 AM - 2AM</option>
+        <option value="2">2 AM - 3AM</option>
+        <option value="3">3 AM - 4AM</option>
+        <option value="4">4 AM - 5AM</option>
+        <option value="5">5 AM - 6AM</option>
+        <option value="6">6 AM - 7AM</option>
+        <option value="7">7 AM - 8AM</option>
+        <option value="8">8 AM - 9AM</option>
+        <option value="9">9 AM - 10AM</option>
+        <option value="10">10 AM - 11AM</option>
+        <option value="11">11 AM - 12PM</option>
+        <option value="12">12 PM - 1PM</option>
+        <option value="13">1 PM - 2PM</option>
+        <option value="14">2 PM - 3PM</option>
+        <option value="15">3 PM - 4PM</option>
+        <option value="16">4 PM - 5PM</option>
+        <option value="17">5 PM - 6PM</option>
+        <option value="18">6 PM - 7PM</option>
+        <option value="19">7 PM - 8PM</option>
+        <option value="20">8 PM - 9PM</option>
+        <option value="21">9 PM - 10PM</option>
+        <option value="22">10 PM - 11PM</option>
+        <option value="23">11 PM - 12AM</option>
+        <option value="24">12 AM - 1AM</option>
+      </select>
+  </div>
+  <div class="Nap_container">
+  	<h4 class="h42">SET NAP TIME</h4>
+		<select id="napTimeSelector">
+      <option value="1">1 AM - 2AM</option>
+      <option value="2">2 AM - 3AM</option>
+      <option value="3">3 AM - 4AM</option>
+      <option value="4">4 AM - 5AM</option>
+      <option value="5">5 AM - 6AM</option>
+      <option value="6">6 AM - 7AM</option>
+      <option value="7">7 AM - 8AM</option>
+      <option value="8">8 AM - 9AM</option>
+      <option value="9">9 AM - 10AM</option>
+      <option value="10">10 AM - 11AM</option>
+      <option value="11">11 AM - 12PM</option>
+      <option value="12">12 PM - 1PM</option>
+      <option value="13">1 PM - 2PM</option>
+      <option value="14">2 PM - 3PM</option>
+      <option value="15">3 PM - 4PM</option>
+      <option value="16">4 PM - 5PM</option>
+      <option value="17">5 PM - 6PM</option>
+      <option value="18">6 PM - 7PM</option>
+      <option value="19">7 PM - 8PM</option>
+      <option value="20">8 PM - 9PM</option>
+      <option value="21">9 PM - 10PM</option>
+      <option value="22">10 PM - 11PM</option>
+      <option value="23">11 PM - 12AM</option>
+      <option value="24">12 AM - 1AM</option>
+      </select>
+      </div>
+    <br>
+    </div>
+
+    <button id="partyTimeButton">Party TIME!</button>
+
+    <footer>
+      <p>&copy; Skillcrush 2020</p>
+    </footer>
+  </div>
+
+</body>
+<script type="text/javascript" src="js/clock.js"></script>
+</html>
